@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Nunito&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.navTitle {
+    font-size: 30px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.navLink {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+}

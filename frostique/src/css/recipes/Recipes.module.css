@@ -1,0 +1,21 @@
+.recipesPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipesContainer {
+    flex: 1;
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto 250px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .recipesContainer {
+        padding: 40px 20px;
+    }
+}

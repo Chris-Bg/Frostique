@@ -1,0 +1,49 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: "Serif", serif;
+    color: #000;
+    background-color: #fff;
+}
+
+.div-2 {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.navbar-instance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.span {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.text-wrapper-4 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    width: 100%;
+}

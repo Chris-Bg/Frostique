@@ -1,0 +1,6 @@
+[
+  { "image": "/src/images/catalog-img1.png", "label": "N°01" },
+  { "image": "/src/images/catalog-img2.png", "label": "N°02" },
+  { "image": "/src/images/catalog-img3.png", "label": "N°09" },
+  { "image": "/src/images/catalog-img4.png", "label": "N°14" }
+]

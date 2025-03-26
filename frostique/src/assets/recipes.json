@@ -1,0 +1,46 @@
+[
+  { "name": "Exotic",
+    "subtext": "COCONUT",
+    "image": "src/images/recipes-exotic.png"
+  },
+  {
+    "name": "Raspberries",
+    "subtext": "VANILLA",
+    "image": "src/images/recipes-raspberries.png"
+  },
+  {
+    "name": "Chocolate",
+    "subtext": "HAZELNUTS",
+    "image" : "src/images/recipes-chocolate.png"
+  },
+  {
+    "name": "Orange",
+    "subtext": "ALMONDS",
+    "image": "src/images/recipes-orange.png"
+  },
+  {
+    "name": "Pistachio",
+    "subtext": "CHERRY",
+    "image": "src/images/recipes-pistachio.png"
+  },
+  {
+    "name": "Vanilla",
+    "subtext": "JASMINE FLOWERS",
+    "image": "src/images/recipes-vanilla.png"
+  },
+  {
+    "name": "Lemon",
+    "subtext": "HAZELNUTS",
+    "image": "src/images/recipes-lemon.png"
+  },
+  {
+    "name": "Caramel",
+    "subtext": "PASSION FRUIT",
+    "image": "src/images/recipes-caramel.png"
+  },
+  {
+    "name": "Cocoa",
+    "subtext": "100% CHOCOLATE",
+    "image": "src/images/recipes-cocoa.png"
+  }
+]

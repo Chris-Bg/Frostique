@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Cormorant+Garamond&display=swap');
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.menuNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.menuNavSpacer {
+    width: 120px;
+}
+
+.menuNavTitle {
+    font-size: 30px;
+    font-family: "Cormorant Garamond", serif;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menuClose {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    width: 120px;
+    text-align: right;
+}
+
+.menuItemsContainer {
+    width: 33.33%;
+    height: calc(100% - 81px);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menuItem {
+    display: flex;
+    align-items: baseline;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.clickable:hover {
+    transform: translateX(5px);
+    color: #555;
+}
+
+.menuItemNumber {
+    font-family: 'Instrument Serif', serif;
+    font-size: 20px;
+    margin-right: 15px;
+    color: #888;
+}
+
+.menuItemText {
+    font-family: 'Instrument Serif', serif;
+    font-size: 60px;
+    font-weight: 400;
+}

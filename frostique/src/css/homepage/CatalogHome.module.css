@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+}

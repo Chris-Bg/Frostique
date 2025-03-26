@@ -1,0 +1,7 @@
+[
+  { "id": "catalog", "number": "01", "text": "Catalog", "link": "/catalog" },
+  { "id": "services", "number": "02", "text": "Services", "link": null },
+  { "id": "recipes", "number": "03", "text": "Recipes", "link": "/recipes" },
+  { "id": "about", "number": "04", "text": "About", "link": "/about" },
+  { "id": "order", "number": "05", "text": "Order", "link": null }
+]

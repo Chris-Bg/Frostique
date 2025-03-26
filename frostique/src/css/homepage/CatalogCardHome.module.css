@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.catalogCard {
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.catalogCard:hover {
+    transform: translateY(-5px);
+}
+
+.catalogImage {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.catalogImage:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.catalogLabel {
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: left;
+}

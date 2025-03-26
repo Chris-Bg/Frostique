@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap');
+
+.hr {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.footer {
+    width: 100%;
+    background: white;
+}
+
+.footerTopDivider {
+    height: 1px;
+    background: #fafafa;
+    width: 100%;
+    border: 2px solid #fafafa;
+}
+
+.footerContentContainer {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.quickLinks {
+    width: 140px;
+}
+
+.openingHours {
+    width: 370px;
+}
+
+.contactUs {
+    width: 250px;
+}
+
+.footerTitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 160px;
+}
+
+.footerLink {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #333;
+    text-decoration: none;
+}
+
+.hoursContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.hoursRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.days {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.hours {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hoursDivider {
+    height: 2px;
+    background: #FAFAFA;
+    width: 100%;
+    margin: 4px 0;
+    border: 2px solid #fafafa;
+}
+
+.contactInfo p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    margin: 0 0 12px 0;
+}

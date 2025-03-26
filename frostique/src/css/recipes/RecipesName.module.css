@@ -1,0 +1,105 @@
+/* RecipesName.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Nunito&display=swap');
+
+.recipeWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.recipeContainer {
+    text-align: center;
+    padding: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 1;
+    background-color: white;
+    max-width: 600px;
+}
+
+.recipeContainer.hovered {
+    font-style: italic;
+}
+
+.recipeName {
+    font-family: 'Instrument Serif', serif;
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.recipeContainer.hovered .recipeName,
+.recipeContainer.hovered .recipeSubtext {
+    color: #838181;
+}
+
+.recipeSubtext {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 0.8;
+    transition: color 0.3s ease;
+}
+
+.recipeImage {
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.left {
+    left: 180px;
+}
+
+.right {
+    right: 180px;
+}
+
+@media (max-width: 1200px) {
+    .recipeImage {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 900px) {
+    .recipeImage {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .recipeWrapper {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .recipeName {
+        font-size: 50px;
+    }
+
+    .recipeSubtext {
+        font-size: 20px;
+    }
+
+    .recipeImage {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 20px;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+    }
+}
