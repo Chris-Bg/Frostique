@@ -9,7 +9,7 @@ import History from "./History.jsx";
 
 function AboutUsPage() {
     return (
-        <div className={styles.aboutPage}>
+        <div>
             <Navbar />
 
             <main className={styles.mainContent}>

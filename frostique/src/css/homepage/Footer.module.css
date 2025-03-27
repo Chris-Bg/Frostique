@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap');
 
-/* Base Styles */
 .footer {
     width: 100%;
     background: white;
@@ -11,13 +10,13 @@
     height: 1px;
     background: #fafafa;
     width: 100%;
-    border: none; /* Removed border as it duplicates the background */
+    border: none;
 }
 
 .footerContentContainer {
     display: flex;
     justify-content: center;
-    gap: 60px; /* Reduced from 200px */
+    gap: 200px;
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
@@ -51,7 +50,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    height: auto; /* Changed from fixed height */
+    height: auto;
 }
 
 .footerLink {
@@ -64,7 +63,7 @@
 }
 
 .footerLink:hover {
-    color: #000; /* Add hover effect */
+    color: #000;
 }
 
 .hoursContainer {
@@ -92,10 +91,10 @@
 }
 
 .hoursDivider {
-    height: 1px; /* Reduced from 2px */
+    height: 1px;
     background: #fafafa;
     width: 100%;
-    margin: 12px 0; /* Increased spacing */
+    margin: 12px 0;
     border: none;
 }
 
@@ -107,7 +106,6 @@
     line-height: 1.4;
 }
 
-/* Responsive Breakpoints */
 @media (max-width: 1024px) {
     .footerContentContainer {
         gap: 40px;

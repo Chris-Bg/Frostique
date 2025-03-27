@@ -128,9 +128,6 @@
         max-width: 300px;
         height: auto;
         margin-top: 20px;
-        left: auto !important;
-        right: auto !important;
-        transform: none !important;
     }
 
     .left {

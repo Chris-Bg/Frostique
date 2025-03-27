@@ -11,7 +11,7 @@ import catalogImages from "@assets/catalogHomepage.json";
 export default function Homepage() {
     return (
         <div className="main">
-            <div className="div-2">
+            <div>
                 <Navbar />
                 <Header />
                 <Moto
