@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../../css/aboutUsPage/History.module.css';
-import decor from '../../images/aboutus-decor.png'
+import styles from '@css/aboutUsPage/History.module.css';
+import decor from '@images/aboutus-decor.png'
 
 function History(){
     return (

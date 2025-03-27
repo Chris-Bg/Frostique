@@ -10,10 +10,14 @@
 .navTitle {
     font-size: 30px;
     font-family: "Cormorant Garamond", serif;
+    text-decoration: none;
+    color: inherit;
 }
 
 .navLink {
     cursor: pointer;
     font-size: 20px;
     font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    color: inherit;
 }

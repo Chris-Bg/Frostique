@@ -4,41 +4,97 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 30px 0;
-    margin-top: -20px;
-    margin-bottom: 50px;
+    padding: 30px 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .aboutUsContainer {
-    display: inline-block;
-    white-space: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 40px;
     text-align: center;
 }
 
 .aboutUsBox {
-    display: inline-block;
-    width: 440px;
-    height: 160px;
-    vertical-align: top;
-    padding: 20px;
-    margin: 0 60px; /* Increased gap between boxes */
+    width: 100%;
+    max-width: 440px;
+    min-height: 160px;
+    padding: 25px;
     text-align: left;
-    overflow: hidden;
-    position: relative;
+    box-sizing: border-box;
+    background-color: white;
 }
+
 
 .aboutUsTitle {
     font-family: 'Nunito', sans-serif;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 12px;
+    color: #333;
 }
 
 .aboutUsText {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.6;
     margin: 0;
-    white-space: normal;
+    color: #555;
+}
+
+@media (max-width: 1024px) {
+    .aboutUsContainer {
+        gap: 30px;
+    }
+
+    .aboutUsBox {
+        max-width: 380px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .outerContainer {
+        padding: 20px 15px;
+    }
+
+    .aboutUsContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .aboutUsBox {
+        max-width: 100%;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .aboutUsTitle {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .outerContainer {
+        padding: 20px 10px;
+    }
+
+    .aboutUsBox {
+        padding: 18px;
+    }
+
+    .aboutUsTitle {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .aboutUsText {
+        font-size: 15px;
+        line-height: 1.5;
+    }
 }

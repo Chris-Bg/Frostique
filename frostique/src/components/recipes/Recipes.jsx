@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from '../homepage/Navbar.jsx';
 import Footer from '../homepage/Footer.jsx';
 import RecipeName from './RecipesName.jsx';
-import styles from '../../css/recipes/Recipes.module.css';
-import recipes from '../../assets/recipes.json';
+import styles from '@css/recipes/Recipes.module.css';
+import recipes from '@assets/recipes.json';
 
 function Recipes(){
     return (

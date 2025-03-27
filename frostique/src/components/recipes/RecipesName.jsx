@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import styles from '../../css/recipes/RecipesName.module.css';
+import styles from '@css/recipes/RecipesName.module.css';
 
 function RecipeName({ name, subtext, image, index }) {
     const [isHovered, setIsHovered] = useState(false);

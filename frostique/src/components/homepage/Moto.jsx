@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../css/homepage/Moto.module.css";
+import styles from "@css/homepage/Moto.module.css";
 
 export default function Moto({ subText }) {
     return (

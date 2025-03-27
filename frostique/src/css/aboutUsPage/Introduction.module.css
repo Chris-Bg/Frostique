@@ -36,3 +36,59 @@
     font-family: 'Instrument Serif', serif;
     font-style: italic;
 }
+
+@media (max-width: 1200px) {
+    .aboutText {
+        font-size: 56px;
+    }
+
+    .titleParagraphContainer {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        padding: 50px 30px;
+    }
+
+    .aboutText {
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .sectionTitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titleParagraphContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .aboutText {
+        font-size: 40px;
+    }
+
+    .sectionTitle {
+        white-space: normal;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        padding: 40px 20px;
+    }
+
+    .aboutText {
+        font-size: 32px;
+    }
+
+    .sectionTitle {
+        font-size: 18px;
+    }
+}

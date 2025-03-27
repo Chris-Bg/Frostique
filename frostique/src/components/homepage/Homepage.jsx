@@ -5,8 +5,8 @@ import Moto from "./Moto.jsx";
 import CatalogHome from "./CatalogHome.jsx";
 import AboutUs from "./AboutUs.jsx";
 import Footer from "./Footer.jsx";
-import "../../css/homepage/Homepage.module.css";
-import catalogImages from "../../assets/catalogHomepage.json";
+import "@css/homepage/Homepage.module.css";
+import catalogImages from "@assets/catalogHomepage.json";
 
 export default function Homepage() {
     return (

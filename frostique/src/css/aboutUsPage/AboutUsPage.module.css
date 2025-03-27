@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Instrument+Serif&display=swap');
 
-/* AboutPage.module.css */
 .aboutPage {
     font-family: 'Neue Haas Grotesk', 'Helvetica', sans-serif;
     color: #000;
@@ -8,10 +7,9 @@
 }
 
 .mainContent {
-    margin-top: 80px; /* Adjust based on your navbar height */
+    margin-top: 80px;
 }
 
-/* Hero Section */
 .hero {
     height: 80vh;
     display: flex;
@@ -31,7 +29,6 @@
     text-transform: uppercase;
 }
 
-/* Text Section */
 .textSection {
     padding: 8vw 5vw;
 }
@@ -52,7 +49,6 @@
     line-height: 1.3;
 }
 
-/* Full-width Image */
 .fullWidthImage {
     width: 100%;
     height: 100vh;
@@ -65,7 +61,6 @@
     object-fit: cover;
 }
 
-/* Philosophy Section */
 .philosophy {
     padding: 8vw 5vw;
     max-width: 1200px;
@@ -91,7 +86,6 @@
     margin-bottom: 2vw;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .textColumns,
     .philosophyColumns {

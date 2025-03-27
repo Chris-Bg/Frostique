@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../../css/aboutUsPage/AboutCake.module.css';
-import cake from "../../images/aboutus-cake.png"
+import styles from '@css/aboutUsPage/AboutCake.module.css';
+import cake from "@images/aboutus-cake.png"
 
 function AboutCake() {
     return (

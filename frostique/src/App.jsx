@@ -1,22 +1,27 @@
-// App.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Homepage from "./components/homepage/Homepage.jsx";
-import CatalogPage from "./components/catalog/CatalogPage.jsx";
-import Menu from "./components/Menu.jsx";
-import AboutUsPage from "./components/aboutUsPage/AboutUsPage.jsx";
-import Recipes from "./components/recipes/Recipes.jsx";
 
+import { Router, Routes, Route } from "@components/navigation";
+import { Homepage, CatalogPage, Recipes, Menu, AboutUsPage } from "@pages/index.js";
 
 function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Homepage />} />
-                <Route path="/catalog" element={<CatalogPage />} />
-                <Route path="/menu" element={<Menu />} />
-                <Route path="/recipes" element={<Recipes />} />
-                <Route path="/about" element={<AboutUsPage />} />
+                <Route path="/">
+                    <Homepage />
+                </Route>
+                <Route path="/catalog">
+                    <CatalogPage />
+                </Route>
+                <Route path="/recipes">
+                    <Recipes />
+                </Route>
+                <Route path="/menu">
+                    <Menu />
+                </Route>
+                <Route path="/about">
+                    <AboutUsPage />
+                </Route>
             </Routes>
         </Router>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 import CatalogCardHome from "./CatalogCardHome.jsx";
-import styles from "../../css/homepage/CatalogHome.module.css";
+import styles from "@css/homepage/CatalogHome.module.css";
 
 export default function CatalogHome({ items }) {
     return (

@@ -1,8 +1,8 @@
 import React from "react";
 import CatalogCard from "./CatalogCard.jsx";
 import Navbar from "../homepage/Navbar.jsx";
-import styles from "../../css/catalog/CatalogPage.module.css";
-import catalogData from "../../assets/catalogPage.json";
+import styles from "@/css/catalog/CatalogPage.module.css";
+import catalogData from "@assets/catalogPage.json";
 
 export default function CatalogPage() {
     const rows = 8;
@@ -25,7 +25,6 @@ export default function CatalogPage() {
     for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
             const isFilled = filledCells.some(([r, c]) => r === row && c === col);
-
             gridCells.push({
                 row,
                 col,
@@ -39,27 +38,17 @@ export default function CatalogPage() {
         <>
             <Navbar />
             <div className={styles.catalogPage}>
-
                 <div className={styles.catalogGrid}>
-                    {Array.from({ length: rows }).map((_, rowIndex) => (
-                        <div key={`row-${rowIndex}`} className={styles.gridRow}>
-                            {Array.from({ length: cols }).map((_, colIndex) => {
-                                const cell = gridCells.find(c => c.row === rowIndex && c.col === colIndex);
-
-                                return (
-                                    <div key={`cell-${rowIndex}-${colIndex}`} className={styles.gridCell}>
-                                        {cell?.filled ? (
-                                            <CatalogCard
-                                                image={cell.data.image}
-                                                label={cell.data.label}
-                                            />
-                                        ) : (
-                                            <div className={styles.emptyCell}></div>
-                                        )}
-                                    </div>
-                                );
-                            })}
-                        </div>
+                    {gridCells.map((cell, index) => (
+                        cell.filled ? (
+                            <CatalogCard
+                                key={`card-${index}`}
+                                image={cell.data.image}
+                                label={cell.data.label}
+                            />
+                        ) : (
+                            <div key={`empty-${index}`} className={styles.emptyCell} />
+                        )
                     ))}
                 </div>
             </div>

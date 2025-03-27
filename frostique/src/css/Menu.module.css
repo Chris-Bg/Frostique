@@ -31,6 +31,8 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    text-decoration: none;
+    color: inherit;
 }
 
 .menuClose {
@@ -61,6 +63,8 @@
     align-items: baseline;
     margin: 20px 0;
     text-align: left;
+    text-decoration: none;
+    color: inherit;
 }
 
 .clickable {

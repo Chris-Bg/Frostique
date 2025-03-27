@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../css/homepage/CatalogCardHome.module.css";
+import styles from "@css/homepage/CatalogCardHome.module.css";
 
 export default function CatalogCardHome({ image, label }) {
     return (

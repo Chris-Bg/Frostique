@@ -1,35 +1,72 @@
 .catalogPage {
-    padding: 40px;
+    padding: 20px;
     max-width: 1600px;
     margin: 0 auto;
 }
 
 .pageTitle {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 48px;
+    font-size: clamp(32px, 5vw, 48px);
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 3vw, 40px);
 }
 
 .catalogGrid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-}
-
-.gridRow {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.gridCell {
-    width: 215px;
-    height: 390px;
+    justify-items: center;
 }
 
 .emptyCell {
     width: 100%;
     height: 100%;
     background-color: transparent;
+}
+
+@media (max-width: 1200px) {
+    .catalogGrid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .catalogGrid {
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .emptyCell {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalogGrid {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: 12px;
+    }
+
+    .catalogPage {
+        padding: 15px;
+    }
+
+    .emptyCell {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .catalogGrid {
+        grid-template-columns: repeat(1, minmax(120px, 1fr));
+        gap: 12px;
+    }
+
+    .catalogPage {
+        padding: 15px;
+    }
+
+    .emptyCell {
+        display: none;
+    }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../css/catalog/CatalogCard.module.css";
+import styles from "@css/catalog/CatalogCard.module.css";
 
 export default function CatalogCard({ image, label }) {
     return (

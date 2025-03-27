@@ -1,4 +1,4 @@
-import styles from "../../css/aboutUsPage/Introduction.module.css";
+import styles from "@css/aboutUsPage/Introduction.module.css";
 
 
 function Introduction() {

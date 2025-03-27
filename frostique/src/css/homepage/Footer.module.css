@@ -1,27 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap');
 
-.hr {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
+/* Base Styles */
 .footer {
     width: 100%;
     background: white;
+    padding-bottom: 20px;
 }
 
 .footerTopDivider {
     height: 1px;
     background: #fafafa;
     width: 100%;
-    border: 2px solid #fafafa;
+    border: none; /* Removed border as it duplicates the background */
 }
 
 .footerContentContainer {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 60px; /* Reduced from 200px */
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
@@ -55,7 +51,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    height: 160px;
+    height: auto; /* Changed from fixed height */
 }
 
 .footerLink {
@@ -64,6 +60,11 @@
     font-weight: 200;
     color: #333;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footerLink:hover {
+    color: #000; /* Add hover effect */
 }
 
 .hoursContainer {
@@ -77,24 +78,25 @@
     padding: 8px 0;
 }
 
-.days {
+.days, .hours {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
+}
+
+.days {
     font-weight: 200;
 }
 
 .hours {
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
     font-weight: 400;
 }
 
 .hoursDivider {
-    height: 2px;
-    background: #FAFAFA;
+    height: 1px; /* Reduced from 2px */
+    background: #fafafa;
     width: 100%;
-    margin: 4px 0;
-    border: 2px solid #fafafa;
+    margin: 12px 0; /* Increased spacing */
+    border: none;
 }
 
 .contactInfo p {
@@ -102,4 +104,69 @@
     font-size: 16px;
     font-weight: 200;
     margin: 0 0 12px 0;
+    line-height: 1.4;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .footerContentContainer {
+        gap: 40px;
+    }
+
+    .openingHours {
+        width: 300px;
+    }
+
+    .contactUs {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerContentContainer {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 30px;
+    }
+
+    .quickLinks,
+    .openingHours,
+    .contactUs {
+        width: 100%;
+    }
+
+    .footerLinks {
+        height: auto;
+    }
+
+    .hoursRow {
+        padding: 6px 0;
+    }
+
+    .footerTitle {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerContentContainer {
+        padding: 0 20px;
+        gap: 30px;
+    }
+
+    .footerTitle {
+        font-size: 20px;
+    }
+
+    .days,
+    .hours,
+    .contactInfo p,
+    .footerLink {
+        font-size: 15px;
+    }
+
+    .hoursDivider {
+        margin: 8px 0;
+    }
 }
